@@ -9,72 +9,52 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="./icofont/icofont.min.css">
+    <link rel="stylesheet" href="./style/menu_page.css">
     <title>Menu</title>
-    <style>
-         body{
-            background-color: black;
-            
-            color: black;
-        }
-        .text-content {
-            color:white;
-        }
-         .card {
-            border:none;
-            background-color: transparent;
-            color:white;
-            border-radius: 0.9375rem;
-        }
-        .card img{
-            border-radius: 0.9375rem;
-            object-fit: cover;
-            height: 250px;
-            width:100%;
-
-        }
-        
-    </style>
+   
 </head>
 <br>
         <!--Navbar starts here-->
-        <div class="container ">
-            <nav class="navbar navbar-expand-lg navbar-dark  bgColorNav " >
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src="logo.jpg" width="140" height="60" alt=""></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-    
-                            <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">HOME</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#">MENU</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#">BOOK A SHOW</a>
-                            </li>
-                            <li class="nav-item " >
-                                <a class="nav-link" href="#">CONTACT US</a>
-                            </li>
-                        </ul>
-              
-                    </div>
-                </div>
-            </nav>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark  bgColorNav ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="logo.jpg" width="140" height="100" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                  <li class="nav-item marginBtLi">
+                    <a class="nav-link active" aria-current="page" href="main.html">Home</a>
+                  </li>
+                  <li class="nav-item marginBtLi">
+                    <a class="nav-link" href="menu_page.html">Menu</a>
+                  </li>
+                  <li class="nav-item marginBtLi">
+                    <a class="nav-link" href="circus_booking.html">Book a show</a>
+                  </li>
+                  <li class="nav-item marginBtLi">
+                    <a class="nav-link" href="Contact_us.html">Contact us</a>
+                  </li>
+                </ul>
+        
+              </div>
+            </div>
+          </nav>
     <!--main course section-->
     <section id="menu-page">
-        <div class="menu-page wrapper">
+        <div class="menu-page wrapper pt-5">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="text-content text-center ">
                             <h3>Explore our food</h3>
-                            <p>we have many varities of food.we have many varities of food.
-                                we have many varities of food.we have many varities of food.
+                            <p>we have many varities of food.
+                                We offer a wide array of fresh food – hamburger,  pizza, pasta, pies and more.
+                                 We use the freshest ingredients in preparing our food to provide the best quality and taste.
+                                  Try our delicious food today! 
+                                
                             </p>
                         </div>
                     </div>
@@ -82,7 +62,7 @@
                 <div class="row pt-5">
                     <div class="col-lg-4 md-6 mb-lg-0 mb-5">
                         <div class="card">
-                            <img src="chickenpizza.jpg" class="image-fluid"> 
+                            <img src="./pictures/chickenpizza.jpg" class="image-fluid"> 
                             <div class="pt-3 ml-2">
                                 <h4>Chicken pizza</h4>
                                 <p>Time: 30-35 min | serves: 1</p>
@@ -94,7 +74,7 @@
                     </div>
                     <div class="col-lg-4 md-6 mb-lg-0 mb-5">
                         <div class="card">
-                            <img src="img-4.jpg" class="image-fluid"> 
+                            <img src="./pictures/img-4.jpg" class="image-fluid"> 
                             <div class="pt-3 ml-2">
                                 <h4>Vegetable Burger</h4>
                                 <p>Time: 30-35 min | serves: 1</p>
@@ -105,7 +85,7 @@
                     </div>
                     <div class="col-lg-4 md-6 mb-lg-0 mb-5">
                         <div class="card">
-                            <img src="broccolipie.jpg" class="image-fluid"> 
+                            <img src="./pictures/broccolipie.jpg" class="image-fluid"> 
                             <div class="pt-3 ml-2">
                                 <h4>Broccoli pie with basil</h4>
                                 <p>Time: 30-35 min | serves: 1</p>
@@ -118,7 +98,7 @@
                 <div class="row pt-5">
                     <div class="col-lg-4 md-6 mb-lg-0 mb-5 ">
                         <div class="card">
-                            <img src="img-3.jpg" class="image-fluid"> 
+                            <img src="./pictures/img-3.jpg" class="image-fluid"> 
                             <div class="pt-3 ml-2">
                                 <h4>Vegetable Sandwich</h4>
                                 <p>Time: 15-20 min | serves: 1</p>
@@ -129,7 +109,7 @@
                     </div>
                     <div class="col-lg-4 md-6 mb-lg-0 mb-5">
                         <div class="card">
-                            <img src="beef-burger.jpg" class="image-fluid"> 
+                            <img src="./pictures/beef-burger.jpg" class="image-fluid"> 
                             <div class="pt-3 ml-2">
                                 <h4>Beef Burger</h4>
                                 <p>Time: 30-35 min | serves: 1</p>
@@ -141,7 +121,7 @@
                 
                     <div class="col-lg-4 md-6 mb-lg-0 mb-5">
                         <div class="card">
-                            <img src="pasta.jpg" class="image-fluid"> 
+                            <img src="./pictures/pasta.jpg" class="image-fluid"> 
                             <div class="pt-3 ml-2">
                                 <h4>Pasta with grilled chicken</h4>
                                 <p>Time: 30-35 min | serves: 1</p>
@@ -169,16 +149,16 @@
                     <div class="col-sm-12">
                         <div class="text-content text-center ">
                             <h3>Explore our drinks</h3>
-                            <p>we have many varities of drinks.we have many varities of food.
-                                we have many varities of food.we have many varities of food.
+                            <p>we have many flavours of drinks.You can enjoy them along with the food.
+
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="row ">
+                <div class="row pt-5 ">
                     <div class="col-lg-4 md-6 mb-lg-0 mb-5">
                         <div class="card">
-                            <img src="apricote.jpg" class="image-fluid"> 
+                            <img src="./pictures/apricote.jpg" class="image-fluid"> 
                             <div class="pt-3 ml-2">
                                 <h4>APRICOT & THYME </h4>
                                 <p>Time: 15-20 min | serves: </p>
@@ -189,7 +169,7 @@
                     </div>
                     <div class="col-lg-4 md-6 mb-lg-0 mb-5">
                         <div class="card">
-                            <img src="orange.jpeg" class="image-fluid"> 
+                            <img src="./pictures/orange.jpeg" class="image-fluid"> 
                             <div class="pt-3 ml-2">
                                 <h4>Orange Spritz</h4>
                                 <p>Time: 30-35 min | serves: 1</p>
@@ -200,7 +180,7 @@
                     </div>
                     <div class="col-lg-4 md-6 mb-lg-0 mb-5">
                         <div class="card">
-                            <img src="milkshakes.jpg" class="image-fluid"> 
+                            <img src="./pictures/milkshakes.jpg" class="image-fluid"> 
                             <div class="pt-3 ml-2">
                                 <h4>Creamy Strawberry Milkshake</h4>
                                 <p>Time: 30-35 min | serves: 1</p>
@@ -213,7 +193,7 @@
                 <div class="row pt-5">
                     <div class="col-lg-4 md-6 mb-lg-0 mb-5 ">
                         <div class="card">
-                            <img src="apple.jpg" class="image-fluid"> 
+                            <img src="./pictures/apple.jpg" class="image-fluid"> 
                             <div class="pt-3 ml-2">
                                 <h4>APPLE JUICE</h4>
                                 <p>Time: 15-20 min | serves: 1</p>
@@ -224,7 +204,7 @@
                     </div>
                     <div class="col-lg-4 md-6 mb-lg-0 mb-5">
                         <div class="card">
-                            <img src="coca.jpg" class="image-fluid"> 
+                            <img src="./pictures/coca.jpg" class="image-fluid"> 
                             <div class="pt-3 ml-2">
                                 <h4>COCA-Cola</h4>
                                 <p>Time: 2 min | serves: 1</p>
@@ -236,7 +216,7 @@
                 
                     <div class="col-lg-4 md-6 mb-lg-0 mb-5">
                         <div class="card">
-                            <img src="Ice-Tea.jpg" class="image-fluid"> 
+                            <img src="./pictures/Ice-Tea.jpg" class="image-fluid"> 
                             <div class="pt-3 ml-2">
                                 <h4>ICE-TEA</h4>
                                 <p>Time: 10 min | serves: 1</p>
@@ -253,7 +233,7 @@
     <br><br><br>
     <div class="card" style="display: none;" id="item1">
         <h4 style="color:white; margin-left: 15px;">Chicken pizza</h4>
-        <img src="chickenpizza.jpg" class="image-fluid" style="display:inline-block; width: 30px; height: 30px; margin-left: 15px;">
+        <img src="./pictures/chickenpizza.jpg" class="image-fluid" style="display:inline-block; width: 30px; height: 30px; margin-left: 15px;">
         <button style="display: inline-block; border: none;" onclick="minus1()">-</button>
         <p id="counter1" style="display: inline-block;">0</p>
         <button style="display: inline-block; border: none;" onclick="plus1()">+</button>
@@ -263,7 +243,7 @@
     </div>
     <div class="card" style="display: none;" id="item2">
         <h4 style="color:white; margin-left: 15px;">Vegetable Burger</h4>
-        <img src="img-4.jpg" class="image-fluid" style="display:inline-block; width: 30px; height: 30px; margin-left: 15px;">
+        <img src="./pictures/img-4.jpg" class="image-fluid" style="display:inline-block; width: 30px; height: 30px; margin-left: 15px;">
         <button style="display: inline-block; border: none;" onclick="minus2()">-</button>
         <p id="counter2" style="display: inline-block;">0</p>
         <button style="display: inline-block; border: none;" onclick="plus2()">+</button>
@@ -273,7 +253,7 @@
     </div>
     <div class="card" style="display: none;" id="item3">
         <h4 style="color:white; margin-left: 15px;">Broccoli pie with basil</h4>
-        <img src="broccolipie.jpg" class="image-fluid" style="display:inline-block; width: 30px; height: 30px; margin-left: 15px;">
+        <img src="./pictures/broccolipie.jpg" class="image-fluid" style="display:inline-block; width: 30px; height: 30px; margin-left: 15px;">
         <button style="display: inline-block; border: none;" onclick="minus3()">-</button>
         <p id="counter3" style="display: inline-block;">0</p>
         <button style="display: inline-block; border: none;" onclick="plus3()">+</button>
@@ -283,7 +263,7 @@
     </div>
     <div class="card" style="display: none;" id="item4">
         <h4 style="color:white; margin-left: 15px;">Vegetable Sandwich</h4>
-        <img src="img-3.jpg" class="image-fluid" style="margin-left: 15px; display:inline-block; width: 30px; height: 30px;">
+        <img src="./pictures/img-3.jpg" class="image-fluid" style="margin-left: 15px; display:inline-block; width: 30px; height: 30px;">
         <button style="display: inline-block; border: none;" onclick="minus4()">-</button>
         <p id="counter4" style="display: inline-block;">0</p>
         <button style="display: inline-block; border: none;" onclick="plus4()">+</button>
@@ -294,7 +274,7 @@
 
     <div class="card" style="display: none;" id="item5">
         <h4 style="color:white; margin-left: 15px;">Beef Burger</h4>
-        <img src="beef-burger.jpg" class="image-fluid" style="display:inline-block; width: 30px; height: 30px; margin-left: 15px;">
+        <img src="./pictures/beef-burger.jpg" class="image-fluid" style="display:inline-block; width: 30px; height: 30px; margin-left: 15px;">
         <button style="display: inline-block; border: none;" onclick="minus5()">-</button>
         <p id="counter5" style="display: inline-block;">0</p>
         <button style="display: inline-block; border: none;" onclick="plus5()">+</button>
@@ -304,7 +284,7 @@
     </div>
     <div class="card" style="display: none;" id="item6">
         <h4 style="color:white; margin-left: 15px;">Pasta with grilled chicken</h4>
-        <img src="pasta.jpg" class="image-fluid" style="margin-left:15px; display:inline-block; width: 30px; height: 30px;">
+        <img src="./pictures/pasta.jpg" class="image-fluid" style="margin-left:15px; display:inline-block; width: 30px; height: 30px;">
         <button style="display: inline-block; border: none;" onclick="minus6()">-</button>
         <p id="counter6" style="display: inline-block;">0</p>
         <button style="display: inline-block; border: none;" onclick="plus6()">+</button>
@@ -315,7 +295,7 @@
 
     <div class="card" style="display: none;" id="item7">
         <h4 style="color:white; margin-left: 15px;">APRICOT & THYME</h4>
-        <img src="apricote.jpg" class="image-fluid" style="margin-left: 15px; display:inline-block; width: 30px; height: 30px;">
+        <img src="./pictures/apricote.jpg" class="image-fluid" style="margin-left: 15px; display:inline-block; width: 30px; height: 30px;">
         <button style="display: inline-block; border: none;" onclick="minus7()">-</button>
         <p id="counter7" style="display: inline-block;">0</p>
         <button style="display: inline-block; border: none;" onclick="plus7()">+</button>
@@ -326,7 +306,7 @@
 
     <div class="card" style="display: none;" id="item8">
         <h4 style="color:white; margin-left: 15px;">Orange Spritz</h4>
-        <img src="orange.jpeg" class="image-fluid" style="margin-left: 15px; display:inline-block; width: 30px; height: 30px;">
+        <img src="./pictures/orange.jpeg" class="image-fluid" style="margin-left: 15px; display:inline-block; width: 30px; height: 30px;">
         <button style="display: inline-block; border: none;" onclick="minus8()">-</button>
         <p id="counter8" style="display: inline-block;">0</p>
         <button style="display: inline-block; border: none;" onclick="plus8()">+</button>
@@ -337,7 +317,7 @@
 
     <div class="card" style="display: none;" id="item9">
         <h4 style="margin-left:15px;color:white">Creamy Strawberry Milkshake</h4>
-        <img src="milkshakes.jpg" class="image-fluid" style="margin-left:15px;display:inline-block; width: 30px; height: 30px;">
+        <img src="./pictures/milkshakes.jpg" class="image-fluid" style="margin-left:15px;display:inline-block; width: 30px; height: 30px;">
         <button style="display: inline-block; border: none;" onclick="minus9()">-</button>
         <p id="counter9" style="display: inline-block;">0</p>
         <button style="display: inline-block; border: none;" onclick="plus9()">+</button>
@@ -348,7 +328,7 @@
 
     <div class="card" style="display: none;" id="item10">
         <h4 style="color:white; margin-left: 15px;">APPLE JUICE</h4>
-        <img src="apple.jpg" class="image-fluid" style="display:inline-block; width: 30px; height: 30px; margin-left: 15px;">
+        <img src="./pictures/apple.jpg" class="image-fluid" style="display:inline-block; width: 30px; height: 30px; margin-left: 15px;">
         <button style="display: inline-block; border: none;" onclick="minus10()">-</button>
         <p id="counter10" style="display: inline-block;">0</p>
         <button style="display: inline-block; border: none;" onclick="plus10()">+</button>
@@ -360,7 +340,7 @@
 
     <div class="card" style="display: none;" id="item11">
         <h4 style="color:white; margin-left: 15px;">COCA-COLA</h4>
-        <img src="coca.jpg" class="image-fluid" style="display:inline-block; width: 30px; height: 30px; margin-left: 15px;">
+        <img src="./pictures/coca.jpg" class="image-fluid" style="display:inline-block; width: 30px; height: 30px; margin-left: 15px;">
         <button style="display: inline-block; border: none;" onclick="minus11()">-</button>
         <p id="counter11" style="display: inline-block;">0</p>
         <button style="display: inline-block; border: none;" onclick="plus11()">+</button>
@@ -371,7 +351,7 @@
 
     <div class="card" style="display: none;" id="item12">
             <h4 style="color:white; margin-left: 15px;">ICE-TEA</h4>
-            <img src="Ice-Tea.jpg" class="image-fluid" style="display:inline-block; width: 30px; height: 30px; margin-left: 15px;">
+            <img src="./pictures/Ice-Tea.jpg" class="image-fluid" style="display:inline-block; width: 30px; height: 30px; margin-left: 15px;">
             <button style="display: inline-block; border: none;" onclick="minus12()">-</button>
             <p id="counter12" style="display: inline-block;">0</p>
             <button style="display: inline-block; border: none;" onclick="plus12()">+</button>
@@ -380,6 +360,126 @@
                 </span></button>
     </div>
     <button style="border:none; margin-left: 40px; display: none; background-color: #28a745;" id = 'test13' onclick="myFun13()">place your order</button>
+    
+    
+    <hr style="background-color: white;">
+
+    <!--footer starts here-->
+
+<footer class="container-fluid" style="margin-top: 30px;">
+    <div class="container-fluid ">
+      <div class="row container-fluid">
+        <div class="col-lg-4 col-md-4">
+          <h3>
+            <span class="material-icons">
+              motion_photos_on
+            </span>
+            About
+          </h3>
+          <div class="md-3" style="display: block;     margin-bottom: 10px;">
+            <ul style="display: table-cell; vertical-align: top; list-style-type: disc; padding: 0px;">
+              <li style="display: table;     margin-bottom: 10px;">
+                <span class="material-icons " style="display: inline;">
+                  location_on
+                </span>
+                <h5 class="text" style="display: inline;">
+
+                  Creutzgatan 112 44 Stockholm
+                </h5>
+              </li>
+              <li style="display: table;     margin-bottom: 10px;">
+                <span class="material-icons" style="display: inline;">
+                  call
+                </span>
+                <h4 style="display: inline;" class="text">
+
+                  +46 343 4566 432
+                </h4>
+              </li>
+              <li style="display: table;     margin-bottom: 10px;">
+                <span class="material-icons" style="display: inline; size: 10px;">
+                  send
+                </span>
+                <h4 style="display: inline;" class="text">
+
+                  info@yourdomin.com
+                </h4>
+              </li>
+            </ul>
+
+
+
+          </div>
+          <!-- <form action="./successPage.html" class="subscribe-form">
+            <div class="form-group d-flex">
+              <input type="text" name="" id="" class="form=control rounded-left" placeholder="Enter email address"
+                style="    border: 2px solid #fd7500 !important;">
+              <button type="submit" class="form-control submit rounded-right" >
+                <span class="material-icons">
+                  send
+                </span>
+              </button>
+            </div>
+          </form> -->
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <h4 class="footer-heading d-flex align-items-center">
+            <span class="material-icons">
+              feed
+            </span>Latest News
+          </h4>
+          <div class="md-4 d-flex " style="margin-top: 10px;">
+            <img src="./pictures/pic4.png" alt="" class="block-latest-news">
+            <div>
+              <h5 class="text">The first circus show in the city , you will feel excited .</h5>
+              <h6 style="display: inline-block;font-size: 12px;margin-left: 10px;">Apr. 24, 2022</h6>
+            </div>
+          </div>
+          <div class="md-4 d-flex " style="margin-top: 10px;">
+            <img src="./pictures/pic4.png" alt="" class="block-latest-news">
+            <div>
+              <h5 class="text">The first circus show in the city , you will feel excited .</h5>
+              <h6 style="display: inline-block;font-size: 12px;margin-left: 10px;">Apr. 24, 2022</h6>
+            </div>
+          </div>
+          <div class="md-4 d-flex " style="margin-top: 10px;">
+            <img src="./pictures/pic4.png" alt="" class="block-latest-news">
+            <div>
+              <h5 class="text">The first circus show in the city , you will feel excited .</h5>
+              <h6 style="display: inline-block;font-size: 12px;margin-left: 10px;">Apr. 24, 2022</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <h4>
+            <span class="material-icons">
+              dns
+            </span>Information
+          </h4>
+          <ul class="list-unstyle">
+            <li style="display: table;"><a href="main.html">Home</a></li>
+            <li style="display: table;"><a href="menu_page.html">Menu</a></li>
+            <li style="display: table;"><a href="circus_booking.html">Book a show</a></li>
+            <li style="display: table;"><a href="Contact_us.html">Contact Us</a></li>
+
+          </ul>
+
+        </div>
+
+
+      </div>
+      <hr />
+      <div class="row ">
+        <div class="col-md-6 col-lg-8">
+          <p>
+            Copyright &copy;2022 All rights reserved.
+          </p>
+
+
+
+        </div>
+
+    </footer>
 
 <script src="./javaScript/menu_page.js"></script>
     

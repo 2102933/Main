@@ -35,7 +35,7 @@
     resize: none;
 }
 .bg-img{
-    background:linear-gradient(rgba(102, 96, 96, 0.464), rgba(101, 95, 95, 0.426)),url(images/dinner.jpg);
+    background:linear-gradient(rgba(102, 96, 96, 0.464), rgba(101, 95, 95, 0.426)),url(pictures/dinner.jpg);
     min-height: 700px;
     background-position: center;
     background-repeat: no-repeat;

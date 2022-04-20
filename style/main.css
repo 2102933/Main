@@ -1,10 +1,12 @@
+
 .carousel img {
-    top: 0;
-    left: 0;
-    height: 500px;
+    height: 600px;
     width: 800px;
 }
-
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 .header-text {
     position: absolute;

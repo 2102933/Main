@@ -1,4 +1,3 @@
-/*external style for danilo contact us page*/
 .danilo-form input[type=text], input[type=password], input[type=email], textarea{
     width: 100%;
     padding: 15px;
@@ -12,7 +11,7 @@
   }
   */
   .btn {
-    background-color: #197654;
+    background-color: rgb(21, 22, 48);
     color: white;
     padding: 16px 20px;
     border: none;
@@ -35,7 +34,7 @@
     resize: none;
 }
 .bg-img{
-    background:linear-gradient(rgba(102, 96, 96, 0.464), rgba(101, 95, 95, 0.426)),url(pictures/dinner.jpg);
+    background:linear-gradient(rgba(102, 96, 96, 0.464), rgba(101, 95, 95, 0.426)),url(images/dinner.jpg);
     min-height: 700px;
     background-position: center;
     background-repeat: no-repeat;
@@ -47,4 +46,52 @@
     margin-top: 100px;
     color: rgb(0, 0, 0);
     color:white;
+}
+.bgColorNav{
+  background-color: #0e0e0e;
+}
+.item {
+  float:right;
+}
+.submit {
+  color: #fff !important;
+  display: block;
+  width: 52px;
+  height: 52px;
+  font-size: 16px;
+  background: #fd7500 !important;
+  border: none;
+  border-radius: 0
+}
+
+.block-latest-news {
+  display: block;
+  height: 80px;
+  width: 80px;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-left: 10px;
+}
+body{
+  background-color: black;
+  color: #fff;
+}
+footer{
+  
+  bottom:0;
+  width: 100%;
+}
+.bgColorNav {
+  background-color: #0e0e0e;
+}
+.marginBtLi{
+  margin-right: 20px;
+  font-size: x-large;
+}
+.fItalicB{
+  font-style: italic;
 }

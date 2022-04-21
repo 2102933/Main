@@ -27,37 +27,46 @@ $(document).ready(
             var name = $("#nputName3").val();
             var person = $("#inputPerson3").val();
 
+            if(!em && !email && !phone && !name && !person )
+            {
+                e.stopPropagation();
+                e.preventDefault();
+                alert("You Not write anything ");
 
-            if (!em) {
-                e.stopPropagation();
-                e.preventDefault();
-                alert("You Not choose any day ");
-                // window.location.replace("./circus_booking.html");
+            }else{
+                if (!em) {
+                    e.stopPropagation();
+                    e.preventDefault();
+                    alert("You Not choose any day ");
+                    // window.location.replace("./circus_booking.html");
+                }
+                if (!email) {
+                    e.stopPropagation();
+                    e.preventDefault();
+                    alert("You Not write any email ");
+                    
+                }
+                if (!phone) {
+                    e.stopPropagation();
+                    e.preventDefault();
+                    alert("You Not write any phone number ");
+                    
+                }
+                if (!name) {
+                    e.stopPropagation();
+                    e.preventDefault();
+                    alert("You Not write any name ");
+                    
+                }
+                if (!person) {
+                    e.stopPropagation();
+                    e.preventDefault();
+                    alert("You Not write number for person ");
+                    
+                }
+
             }
-            if (!email) {
-                e.stopPropagation();
-                e.preventDefault();
-                alert("You Not write any email ");
-                
-            }
-            if (!phone) {
-                e.stopPropagation();
-                e.preventDefault();
-                alert("You Not write any phone number ");
-                
-            }
-            if (!name) {
-                e.stopPropagation();
-                e.preventDefault();
-                alert("You Not write any name ");
-                
-            }
-            if (!person) {
-                e.stopPropagation();
-                e.preventDefault();
-                alert("You Not write number for person ");
-                
-            }
+            
         });
 
 

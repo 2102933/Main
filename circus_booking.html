@@ -18,7 +18,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./icofont/icofont.min.css">
   <link rel="stylesheet" href="./style/main.css">
-  <link rel="stylesheet" href="./style/booking.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
@@ -138,7 +137,7 @@
       </div>
       <div class="row  " style="margin-left: 5px;">
         <div class="col-lg-6 justify-content-start">
-          <form action="./successPage.html" method="get">
+          <form action="./successPage.html">
             <div class="row md-3 mb-5 mt-5">
               <label for="inputName3" class="col-sm-2 col-form-label">Name</label>
               <div class="col-sm-10">
@@ -146,7 +145,7 @@
               </div>
             </div>
             <div class="row md-3 mb-5">
-              <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+              <label for="inputEmail3" class="col-sm-2 col-form-label" data-bind="value:replyEmail">Email</label>
               <div class="col-sm-10">
                 <input type="email" class="form-control" id="inputEmail3">
               </div>
@@ -166,7 +165,7 @@
             <div class="row mb-3">
               <label for="inputPerson3" class="col-sm-2 col-form-label">How many person ?</label>
               <div class="col-sm-10" style="    margin-top: 14px;">
-                <input type="number" class="form-control " id="inputPerson3">
+                <input type="number" class="form-control " id="inputPerson3" data-bind="value:replyNumber"  min="0">
               </div>
             </div>
             <div style="text-align: center;">

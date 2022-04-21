@@ -12,9 +12,10 @@ $(document).ready(
                 $("#dayYouChoose").text("");
                 $("#dayYouChoose").append(day + '_' + numDay);
             } else {
-                alert("No Circus Show in this day");
+                e.stopPropagation();
                 e.preventDefault();
-                window.location.replace("./circus_booking.html");
+                alert("No Circus Show in this day");
+                
 
             }
             console.log(day);
@@ -22,51 +23,87 @@ $(document).ready(
 
         $("form").submit(function (e) {
             var em = $("#dayYouChoose").text();
+
+            function isEmail(email) {
+                var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+                return regex.test(email);
+            }
             var email = $("#inputEmail3").val();
+            var emailV = isEmail(email);
+
+            function validatePhone(txtPhone) {
+                var filter = /([0-9]{10})|(\([0-9]{3}\)\s+[0-9]{3}\-[0-9]{4})/;
+                return filter.test(txtPhone);
+            }
             var phone = $("#inputPhone3").val();
+            var phoneV = validatePhone(phone);
             var name = $("#nputName3").val();
             var person = $("#inputPerson3").val();
 
-            if(!em && !email && !phone && !name && !person )
-            {
+            if (!em && !email && !phone && !name && !person) {
                 e.stopPropagation();
                 e.preventDefault();
                 alert("You Not write anything ");
 
-            }else{
+            } else {
                 if (!em) {
                     e.stopPropagation();
                     e.preventDefault();
                     alert("You Not choose any day ");
                     // window.location.replace("./circus_booking.html");
-                }
-                if (!email) {
-                    e.stopPropagation();
-                    e.preventDefault();
-                    alert("You Not write any email ");
-                    
-                }
-                if (!phone) {
-                    e.stopPropagation();
-                    e.preventDefault();
-                    alert("You Not write any phone number ");
-                    
-                }
-                if (!name) {
-                    e.stopPropagation();
-                    e.preventDefault();
-                    alert("You Not write any name ");
-                    
-                }
-                if (!person) {
-                    e.stopPropagation();
-                    e.preventDefault();
-                    alert("You Not write number for person ");
-                    
+                } else {
+                    if (!email) {
+                        e.stopPropagation();
+                        e.preventDefault();
+                        alert("You Not write any email ");
+
+                    } else {
+
+                        if (!phone) {
+                            e.stopPropagation();
+                            e.preventDefault();
+                            alert("You Not write any phone number ");
+
+                        } else {
+
+                            if (!name) {
+                                e.stopPropagation();
+                                e.preventDefault();
+                                alert("You Not write any name ");
+
+                            } else {
+
+                                if (!person) {
+                                    e.stopPropagation();
+                                    e.preventDefault();
+                                    alert("You Not write number for person ");
+
+                                } else {
+                                    if (!emailV) {
+                                        e.stopPropagation();
+                                        e.preventDefault();
+                                        alert("You write error your email");
+                                    }else{
+                                        
+                                        if(!phoneV){
+                                            e.stopPropagation();
+                                        e.preventDefault();
+                                        alert("You write error your phone number");
+                                            
+                                        }
+
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+
                 }
 
+
             }
-            
+
         });
 
 

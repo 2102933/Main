@@ -22,11 +22,41 @@ $(document).ready(
 
         $("form").submit(function (e) {
             var em = $("#dayYouChoose").text();
+            var email = $("#inputEmail3").val();
+            var phone = $("#inputPhone3").val();
+            var name = $("#nputName3").val();
+            var person = $("#inputPerson3").val();
+
+
             if (!em) {
                 e.stopPropagation();
                 e.preventDefault();
                 alert("You Not choose any day ");
                 // window.location.replace("./circus_booking.html");
+            }
+            if (!email) {
+                e.stopPropagation();
+                e.preventDefault();
+                alert("You Not write any email ");
+                
+            }
+            if (!phone) {
+                e.stopPropagation();
+                e.preventDefault();
+                alert("You Not write any phone number ");
+                
+            }
+            if (!name) {
+                e.stopPropagation();
+                e.preventDefault();
+                alert("You Not write any name ");
+                
+            }
+            if (!person) {
+                e.stopPropagation();
+                e.preventDefault();
+                alert("You Not write number for person ");
+                
             }
         });
 

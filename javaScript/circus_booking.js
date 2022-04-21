@@ -21,7 +21,7 @@ $(document).ready(
         });
 
         $("form").submit(function (e) {
-            var em = $("#dayYouChoose").val();
+            var em = $("#dayYouChoose").text();
             if (!em) {
                 e.stopPropagation();
                 e.preventDefault();

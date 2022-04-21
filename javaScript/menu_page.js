@@ -65,3 +65,6 @@ $(document).ready(function(){
    
 
 });
+function doit(){
+    alert('order submited')
+}

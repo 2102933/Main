@@ -14,12 +14,23 @@ $(document).ready(
             } else {
                 alert("No Circus Show in this day");
                 e.preventDefault();
-             window.location.replace("./circus_booking.html");
+                window.location.replace("./circus_booking.html");
 
             }
             console.log(day);
         });
-       
+
+        $("form").submit(function (e) {
+            var em = $("#dayYouChoose").val();
+            if (!em) {
+                e.stopPropagation();
+                e.preventDefault();
+                alert("You Not choose any day ");
+                // window.location.replace("./circus_booking.html");
+            }
+        });
+
 
     })
+
 )
